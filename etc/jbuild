@@ -1,0 +1,6 @@
+(jbuild_version 1)
+
+(install
+ ((section etc)
+  (package odoc2docset)
+  (files (icon.png))))
