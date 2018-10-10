@@ -2,7 +2,8 @@
  (name odoc)
  (libraries bos compiler-libs.common html fpath loader tyxml unix xref))
 
-(documentation)
+(documentation
+ (package odoc))
 
 (rule
  (targets css_file.ml)
@@ -27,6 +28,7 @@
 ; Install theme files for odig.
 (install
  (section share)
+ (package odoc)
  (files
   (etc/odoc.css as odoc-theme/default/odoc.css)
   (../vendor/highlight.pack.js as odoc-theme/default/highlight.pack.js)))
